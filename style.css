@@ -1,0 +1,33 @@
+body { 
+        background-color: rgb(255, 255, 255);
+        margin-left: 20%;
+        margin-right: 20%;
+        border: 2px dotted black;
+        padding: 10px 10px 10px 10px;
+        font-family: Georgia, serif;;
+}
+.bjing {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        object-fit: contain;
+}
+.主页背景{
+        position: relative;
+        top: 0px;
+        left: 20px;
+        width: 100%;
+        height: 33%;
+}
+.link_icon {
+        width: 50px;
+        height:50px;
+}
+.跳转样式{
+        font: Times New Roman;
+        color:black;
+        text-decoration-line:none;
+}
