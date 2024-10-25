@@ -1,5 +1,9 @@
+# 鸢天
 
- # 鸢天 
- 测试个人博客建立
+赤（あか）霊（れい） = akarei = yinling
 
- yuantian
+医学学习
+
+- 123盘医学学习资料：https://www.123865.com/s/P69Sjv-TXQHh 提取码:1234
+
+Gitbook 搜索 ：site:gitbook.io <检索词>
