@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(243, 243, 255);
+    color: rgb(68, 68, 68);
+    font-family: Harmony Sans SC;
+    background-image: none;
+}
+p {
+    color: aqua;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 0%;
+}
+#footer {
+    color: grey;
+}
+#footer:hover {
+    color: black;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
