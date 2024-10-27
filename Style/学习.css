@@ -1,69 +1,151 @@
-body {
-    background-color: rgb(248, 248, 248);
+/* ?网页主体-body */
+html, body {
+    background-color: rgb(246, 248, 254);
     color: rgb(68, 68, 68);
-    font-family: Harmony Sans SC;
+    font-family: Harmony Sans SC, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: small;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+.网页头部 {
     background-image: url(../Assets/缩略图/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.805);
-    /* 黑色半透明层 */
-    z-index: -1;
+    height: auto;
+    backdrop-filter: blur();
 }
 
+.网页头部:hover {
+    cursor: default;
+}
+
+.网页头部 .中心问候 {
+    padding: 8rem;
+    display: grid;
+}
+.网页头部 .中心问候 .中心问候-flex-svg {
+    width: 1rem;
+    height: fit-content;
+}
+
+/* ?顶部导航栏 */
+.顶部导航栏 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    padding: 1rem;
+    box-sizing: border-box;
+    top: 0;
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(97, 97, 97, 0.137);
+    backdrop-filter: blur(0.4rem);
+}
+
+.顶部导航栏 .nav-title {
+    font-size: 2rem;
+    font-weight: bold;
+    flex-grow: 2;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+.顶部导航栏 .nav-title:hover {
+    color: orange;
+}
+/* ?nav-item */
+.nav-item {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    padding: 0.2rem 1rem;
+}
+
+.nav-item img {
+    width: 1rem
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(68, 68, 68);
+    padding: 0.2rem 1rem;
+}
+
+.nav-item:hover {
+    background-color: rgba(68, 68, 68, 0.1);
+    color: orange;
+}
+
+
+/* ?网页主体 */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-p {
+main p {
     color: rgba(0, 0, 0, 0.67);
-    font-size: 16px;
+    font-size: 1rem;
     position: relative;
     padding-bottom: 0%;
 }
 
-#footer {
-    color: grey;
-}
-
-#footer:hover {
-    color: black;
-}
-
-nav {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 16px 0px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-basis: 80%;
-    justify-content: center;
-    align-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-a {
+main a {
     color: rgb(68, 68, 68);
-    text-underline-offset: 0.5em;
+    text-underline-offset: 0.5rem;
     text-decoration: underline dotted;
     text-decoration-color: rgb(107, 115, 115);
     transition: color.3s ease;
-    padding: 2px 8px;
+    padding: 1rem 2rem;
 }
 
-a:hover {
+main a:hover {
     color: orange;
     background-color: rgba(212, 207, 207, 0.465);
-    padding: 2px 8px;
+    padding: 1rem 2rem;
+}
+
+main .文章列表 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .文章列表 .blog {
+    background-color: #000;
+}
+
+/* ?网页根部 */
+.footer {
+    color: grey;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer:hover {
+    color: rgb(31, 31, 31);
 }
