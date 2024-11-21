@@ -5,9 +5,9 @@
 
 博客参考主题：[樱花庄的白猫 | ねこ・しろ・ましろ](https://2heng.xin/)、[Mokeyjay&#39;s Blog - 超能小紫](https://mok.moe/)
 
-![1729930725058](./Assets/缩略图/README/1729930725058.pngimage/README/1729930725058.png)
+![1729930725058](./Assets/缩略图/README/1729930725058.png)
 
-![1729930744459](./Assets/缩略图/README/1729930744459.pngimage/README/1729930744459.png)
+![1729930744459](./Assets/缩略图/README/1729930744459.png)
 
 医学学习
 
