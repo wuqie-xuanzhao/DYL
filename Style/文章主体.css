@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.文章主体 {
+    /* ?字体 */
+    font-family: Baskerville, 华文中宋, system-ui, -apple-system;
+    /* ?格式 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    cursor: default !important;
+}
+
+h1 {
+    font-size: 2.4rem;
+    padding-top: 0.96rem;
+    padding-bottom: 1.44rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    padding-top: 0.88rem;
+    padding-bottom: 1.32rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    padding-top: 0.72rem;
+    padding-bottom: 1.08rem;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 0%;
+    text-indent: 2em;/* 首行缩进2个字符 */
+    text-align: justify;/* 两端对齐 */
+    text-justify: newspaper;/* 悬挂缩进 */
+    line-height: 1.5;/* 行间距 */
+}
+
+.正文图像 {
+    width: 100%;
+    text-align: center;
+}
+
+.正文图像 img {
+    max-width: 25vw;
+}
+
+/* ?媒体查询 */
+@media only screen and (max-width: 768px) {
+    .文章主体 {
+        /* ?字体 */
+        font-family: Baskerville, 华文中宋, system-ui, -apple-system;
+        /*?格式 */
+        padding: 0;
+        margin: 2rem;
+        border: 0;
+        vertical-align: baseline;
+        box-sizing: border-box;
+    }
+}
+
+/* ?自定义字体 */
+@font-face {
+    font-family: '方正新书宋简体';
+    src: url('../Assets/字体/方正新书宋简体.ttf');
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Regular-6.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Bold-1.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Italic-3.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-BoldItalic-2.ttf');
+    font-weight: bold;
+    font-style: italic;
+}

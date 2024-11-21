@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root {
+    --color-primary: #0062be;
+}
+
+.title {
+    color: var(#ffffff);
+}
+
+.tags {
+    color: var(--color-primary);
+}
+
+
+
+/* ?自定义字体 */
+@font-face {
+    font-family: '方正新书宋简体';
+    src: url('../Assets/字体/方正新书宋简体.ttf');
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Regular-6.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Bold-1.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-Italic-3.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../Assets/字体/Baskerville/Baskerville-BoldItalic-2.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
