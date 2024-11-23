@@ -14,66 +14,108 @@
     <link rel="stylesheet" href="../../Style/卡片.css">
     <link rel="stylesheet" href="../../Style/侧边栏.css">
     <link rel="stylesheet" href="../../Style/样式初始化.css">
+    <link rel="stylesheet" href="../../Style/头部.css">
     <!--?JS-->
     <script type='text/javascript' src="../../Script/顶部导航栏.js"></script>
+    <script type='text/javascript' src="../../Script/文章字数统计.js"></script>
 </head>
 
 <body>
-    <!--?顶部导航栏-->
     <!--顶部进度条-->
-    <div id="顶部进度条"></div>
-    <!--顶部导航栏-->
+    <!-- <div id="顶部进度条"></div> -->
+    <!--?顶部导航栏-->
     <div class="顶部导航栏" onselectstart="return false">
         <a class="nav-title" href="../../index.html">あかれ~</a>
         <div class="nav-item">
-            <a href="./HTML/鸢天の家.html">
-                <span>
-                    <img src="../../Assets/图标/home.svg" alt="home">
-                    &nbsp;首页
-                </span>
-            </a>
-            <ul>
-                <li>
-                    <a href="../../HTML/Mindfulness Meditation for Chronic Pain Systematic Review and Meta-analysis.html">
+            <div class="菜单">
+                <a href="../../index.html">
+                    <span>
+                        <img src="../../Assets/图标/png/home-2.png">首页
+                    </span>
+                </a>
+            </div>
+            <div class="菜单">
+                <a href="#">
+                    <span>
+                        <img src="../../Assets/图标/png/Calendar-1.png">归档
+                    </span>
+                </a>
+                <div class="二级菜单">
+                    <a class="栏目" href="#">
                         <span>
-                            <img src="../../Assets/图标/apps.svg" alt="apps">
-                            &nbsp;归档
+                            <img src="../../Assets/图标/png/code.png">极客
                         </span>
                     </a>
-                    <ul>
-                        <li>极客</li>
-                        <li>文章</li>
-                        <li>影评</li>
-                        <li>随想</li>
-                        <li>笔记</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="./HTML/学习.html">
+                    <a class="栏目" href="#">
                         <span>
-                            <img src="../../Assets/图标/menu-burger.svg" alt="menu-burger">
-                            &nbsp;清单
+                            <img src="../../Assets/图标/png/page-1.png">文章
                         </span>
                     </a>
-                    <ul>
-                        <li>书单</li>
-                        <li>番组</li>
-                        <li>歌单</li>
-                    </ul>
-                </li>
-            </ul>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/movie.png">影评
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/chat-2.png">随想
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/pen-draw.png">笔记
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="菜单">
+                <a href="#">
+                    <span>
+                        <img src="../../Assets/图标/png/cart.png">清单
+                    </span>
+                </a>
+                <div class="二级菜单">
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/book.png">书单
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/a-youtube1.png">番组
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/note.png">歌单
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="nav-end">
-            <div class="主题样式"></div>
+        <div class="nav-end 主题样式">
+            <img src="../../Assets/图标/png/sun.png">
+        </div>
+    </div>
+
+    <!--?文章头部-->
+    <div class="文章头部">
+        <div class="头图">
+            <img src="../../Assets/缩略图/A_03378.jpg">
+        </div>
+        <div class="文章信息">
+            <h1>汉字的起源</h1>
+            <p>
+                <span class="作者">董琨</span>
+                <span class="创建时间">2024-11-24</span>
+                <span class="最后修改时间"></span>
+                <span class="字数">字数</span>
+            </p>
         </div>
     </div>
 
     <!--?文章主体-->
     <div class="文章主体">
-        <h3>汉字的起源</h3>
-        <p style="font-size: smaller;font-family: Georgia, 'Times New Roman', Times, serif;">作者：董琨</p>
         <p>长期以来，人们把“语言”一词，界定为“人类所特有的用来表达意思、交流思想的工具”，或是"人类特有的一种符号系统”，认为语言是人类区别于其他动物的根本特征之一。可是，经过科学家的研究，现在已经发现许多动物，例如海豚、鲸、黑猩猩、金丝雀、蜜蜂等，也有广义的语言，包括人类听得见的或是听不见的，有的还相当复杂。于是，语言似乎不能视作人类的专利了，尽管在许多方面，动物的语言与人类的语言无法相提并论。
         </p>
         <p>不过，人类在其发展的相当高级的阶段，发明了文字——一种书面的语言，借以使各种信息，既能送到远方，又能传给后代。这可是任何其他动物所望尘莫及的事，真正足以成为人类的自豪。人类则由于文字的发明，结束了漫长的野蛮、混沌的境况，开始踏上文明的道路。

@@ -1,9 +1,3 @@
-/* 样式初始化 */
-a {
-    text-decoration: none;/* ?去除下划线 - 初始化链接的样式 */
-}
-
-/* 正文 */
 #顶部进度条 {
     position: fixed;
     left: 0;
@@ -29,51 +23,100 @@ a {
     padding: 1.2rem 1.2rem;
     box-sizing: border-box;
     top: 0;
-    box-shadow: 0.3rem 0.3rem 0.3rem rgba(97, 97, 97, 0.137);
+    box-shadow: 0rem 0.2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.5);
     /* backdrop-filter: blur(0.5rem);高斯模糊 */
 }
 
-.顶部导航栏 .nav-title {
+/* * nav-title：标题 */
+.nav-title {
     font-family: 华文中宋;
     font-size: 2rem;
     font-weight: bold;
     flex-grow: 1;
     color: rgb(68, 68, 68);
+    text-wrap: nowrap;
 }
 
-.顶部导航栏 .nav-title:hover {
+.nav-title:hover {
     color: orange;
 }
 
+/* * nav-item：菜单栏 */
 .nav-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    flex-grow: 1;
-    color: rgb(68, 68, 68);
+    gap: 2rem;
+    flex-grow: 1.3;
 }
 
 .nav-item img {
     height: 1rem;
+    filter: invert(38%) sepia(5%) saturate(9%) hue-rotate(327deg) brightness(101%) contrast(90%);
 }
 
 .nav-item a span:hover {
-    /* color: orange; */
-    filter: invert(71%) sepia(12%) saturate(7449%) hue-rotate(358deg) brightness(100%) contrast(105%);
-    border-radius: 0.4rem;
+    filter: invert(56%) sepia(100%) saturate(648%) hue-rotate(359deg) brightness(101%) contrast(105%);
+    /*让图片和文本变色*/
 }
 
+.nav-item a span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    gap: .3rem;
+    filter: invert(38%) sepia(5%) saturate(9%) hue-rotate(327deg) brightness(101%) contrast(90%);
+}
+
+.nav-item a:hover+.二级菜单 {
+    display: block;
+}
+
+.菜单 {
+    position: relative;
+}
+.二级菜单::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0rem;
+    width: 100%;
+    height: 1rem;
+}
+.二级菜单 {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    box-shadow: 0rem 0.2rem .5rem rgba(0, 0, 0, 0.5);
+    top: 2rem;
+    left: -1rem;
+}
+.二级菜单 a {
+    display: block;
+    padding:.5rem 1rem;
+}
+
+.二级菜单:hover {
+    display: block;
+}
+
+/* * nav-end：主题样式 */
 .nav-end {
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .主题样式 {
     display: relative;
-    left: 0%;
-    width: 1.2rem;
-    height: 1.2rem;
-    border: .1rem solid #000000;
-    border-radius: 100%;
-    box-sizing: border-box;
+    text-align: end;
+    cursor: pointer;
+}
+
+.主题样式 img {
+    width: 1.4rem;
+    filter: invert(38%) sepia(5%) saturate(9%) hue-rotate(327deg) brightness(101%) contrast(90%);
+    vertical-align: bottom;
 }

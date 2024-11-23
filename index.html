@@ -10,7 +10,12 @@
     <link rel="icon" href="./Assets/图标/a318-ico.png">
     <!--?CSS-->
     <link rel="stylesheet" href="./Style/学习.css">
-    <link rel="stylesheet" href="../Style/文章主体.css">
+    <!-- <link rel="stylesheet" href="../../Style/文章主体.css"> -->
+    <link rel="stylesheet" href="../../Style/顶部导航栏.css">
+    <!-- <link rel="stylesheet" href="../../Style/卡片.css"> -->
+    <link rel="stylesheet" href="../../Style/侧边栏.css">
+    <link rel="stylesheet" href="../../Style/样式初始化.css">
+    <link rel="stylesheet" href="../../Style/头部.css">
 </head>
 
 <body>
@@ -20,15 +25,15 @@
             <h1 class="中心问候-flex-item">HI, AKAREI!</h1>
             <div class="中心问候-flex-svg">
                 <span class="中心问候-标语">"You got to put the past behind you before you can move on."</span>
-                <a href="https://github.com/wuqie-xuanzhao" title="Github"><img src="./Assets/图标/github.svg"
+                <a href="https://github.com/wuqie-xuanzhao" title="Github"><img src="./Assets/图标/svg/github.svg"
                         alt="Github"></a>
-                <a href="https://space.bilibili.com/234439644" title="Bilibili"><img src="./Assets/图标/bilibili.svg"
+                <a href="https://space.bilibili.com/234439644" title="Bilibili"><img src="./Assets/图标/svg/bilibili.svg"
                         alt="Bilibili"></a>
-                <a href="https://x.com/yuanliyinling" title="Twitter"><img src="./Assets/图标/twitter.svg"
+                <a href="https://x.com/yuanliyinling" title="Twitter"><img src="./Assets/图标/svg/twitter.svg"
                         alt="Twitter"></a>
-                <a href="./HTML/404.html" title="Telegram"><img src="./Assets/图标/telegram.svg" alt="Telegram"></a>
+                <a href="./HTML/404.html" title="Telegram"><img src="./Assets/图标/svg/telegram.svg" alt="Telegram"></a>
                 <!--todo待添加channel-->
-                <a href="https://www.zhihu.com/people/yuan-li-yin-ling" title="Zhihu"><img src="./Assets/图标/知乎.svg"
+                <a href="https://www.zhihu.com/people/yuan-li-yin-ling" title="Zhihu"><img src="./Assets/图标/svg/知乎.svg"
                         alt="Zhihu"></a>
             </div>
         </div>
@@ -36,29 +41,83 @@
 
     <!--?顶部导航栏-->
     <div class="顶部导航栏" onselectstart="return false">
-        <a class="nav-title" href="./index.html">
-            あかれ~
-        </a>
-        <span class="nav-占位"></span>
+        <a class="nav-title" href="../../index.html">あかれ~</a>
         <div class="nav-item">
-            <img src="./Assets/图标/home.svg" alt="home">
-            <a class="导航链接" href="./HTML/鸢天の家.html">主页</a>
+            <div class="菜单">
+                <a href="../../index.html">
+                    <span>
+                        <img src="../../Assets/图标/png/home-2.png">首页
+                    </span>
+                </a>
+            </div>
+            <div class="菜单">
+                <a href="#">
+                    <span>
+                        <img src="../../Assets/图标/png/Calendar-1.png">归档
+                    </span>
+                </a>
+                <div class="二级菜单">
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/code.png">极客
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/page-1.png">文章
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/movie.png">影评
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/chat-2.png">随想
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/pen-draw.png">笔记
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="菜单">
+                <a href="#">
+                    <span>
+                        <img src="../../Assets/图标/png/cart.png">清单
+                    </span>
+                </a>
+                <div class="二级菜单">
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/book.png">书单
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/a-youtube1.png">番组
+                        </span>
+                    </a>
+                    <a class="栏目" href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/note.png">歌单
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="nav-item">
-            <img src="./Assets/图标/apps.svg" alt="apps">
-            <a class="导航链接"
-                href="./HTML/Mindfulness Meditation for Chronic Pain Systematic Review and Meta-analysis.html">下载论文</a>
-        </div>
-        <div class="nav-item">
-            <img src="./Assets/图标/menu-burger.svg" alt="menu-burger">
-            <a class="导航链接" href="./HTML/学习.html">学习网页</a>
+        <div class="nav-end 主题样式">
+            <img src="../../Assets/图标/png/sun.png">
         </div>
     </div>
 
     <!--?边栏-->
 
     <!--?网页主体-->
-    <main>
+    <main class="文章主体">
         <div class="title">
             <h1>欢迎来到赤霊的博客!</h1>
         </div>

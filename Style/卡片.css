@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-
 :root {
     --color-primary: #0062be;
 }
@@ -15,32 +9,76 @@
 .tags {
     color: var(--color-primary);
 }
+/* .文章列表 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
 
-
+}
+.文章列表 .blog {
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(97, 97, 97, 0.137);
+    transform: scale(1);
+    transition: box-shadow .3s ease;
+}
+.文章列表 .blog:hover {
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(97, 97, 97, 0.137);
+    transform: scale(1.05);
+    transition: box-shadow .3s ease;
+} */
 
 /* ?自定义字体 */
 @font-face {
     font-family: '方正新书宋简体';
     src: url('../Assets/字体/方正新书宋简体.ttf');
 }
+
+@font-face {
+    font-family: '华文中宋';
+    src: url('../Assets/字体/华文中宋.ttf');
+}
+
+@font-face {
+    font-family: '苹方';
+    src: url('../Assets/字体/苹方简体/PingFang\ Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: '苹方';
+    src: url('../Assets/字体/苹方简体/PingFang\ Regular.ttf');
+}
+
+@font-face {
+    font-family: '苹方';
+    src: url('../Assets/字体/苹方简体/PingFang\ Bold.ttf.ttf');
+    font-weight: bold;
+}
+
 @font-face {
     font-family: 'Baskerville';
     src: url('../Assets/字体/Baskerville/Baskerville-Regular-6.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Baskerville';
     src: url('../Assets/字体/Baskerville/Baskerville-Bold-1.ttf');
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Baskerville';
     src: url('../Assets/字体/Baskerville/Baskerville-Italic-3.ttf');
     font-weight: normal;
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Baskerville';
     src: url('../Assets/字体/Baskerville/Baskerville-BoldItalic-2.ttf');
