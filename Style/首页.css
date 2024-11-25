@@ -10,7 +10,7 @@ body {
     background-image: url(../Assets/缩略图/安比（2）.png);
     background-color: rgb(155, 155, 155);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 20% center;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -48,12 +48,13 @@ body {
     font-size: 5rem;
     grid-area: title;
     text-align: center;
-    color: rgb(191, 255, 42);
+    color: rgba(180, 178, 178, 0.869);
 }
 
 .网页头部 .中心问候 .中心问候-flex-svg {
     grid-area: icons;
-    background-color: #797979;
+    background-color: #46464669;
+    backdrop-filter: blur(.2rem);
     border-radius: 0.5rem;
     padding: 0.5rem;
 }

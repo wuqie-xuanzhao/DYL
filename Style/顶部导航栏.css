@@ -118,11 +118,11 @@
 .主题样式 {
     display: relative;
     text-align: end;
-    cursor: pointer;
 }
 
 .主题样式 img {
     width: 1.4rem;
     filter: invert(38%) sepia(5%) saturate(9%) hue-rotate(327deg) brightness(101%) contrast(90%);
     vertical-align: bottom;
+    cursor: pointer;
 }
