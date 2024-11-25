@@ -1,13 +1,13 @@
 /* ?网页主体-body */
 body {
     /* background-image: url(../Assets/缩略图/background.png); */
-    background-color: rgb(246, 248, 254);
+    /* background-color: rgb(246, 248, 254); */
     color: rgb(68, 68, 68);
     font-family: 苹方, sans-serif;
 }
 
 .网页头部 {
-    background-image: url(../Assets/缩略图/安比（2）.png);
+    background-image: url(../Assets/缩略图/安比（2）.webp);
     background-color: rgb(155, 155, 155);
     background-repeat: no-repeat;
     background-position: 20% center;
@@ -19,14 +19,15 @@ body {
     box-sizing: border-box;
     box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(255, 254, 254, 0.683);
     transform: scale(1);
-    transition: transform .3s ease-in-out;
+    transition: background-image .5s ease-in-out;
     cursor: default;
     overflow: hidden;
     font-family: Mithril, 苹方, sans-serif;
 }
 
 .网页头部:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    background-image: url(../Assets/缩略图/安比（3）.webp);
 }
 
 
