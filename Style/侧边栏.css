@@ -1,0 +1,20 @@
+.侧边栏 {
+    width: fit-content;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+.文章目录 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem .2rem;
+}
+
+.文章目录:hover {
+    background-color: grey;
+    border-radius: 1rem;
+}

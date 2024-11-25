@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-primary: #0062be;
 }
 
@@ -8,7 +8,9 @@
 
 .tags {
     color: var(--color-primary);
-}
+} */
+
+
 /* .文章列表 {
     display: flex;
     flex-direction: column;
@@ -39,6 +41,36 @@
 @font-face {
     font-family: '华文中宋';
     src: url('../Assets/字体/华文中宋.ttf');
+}
+
+@font-face {
+    font-family: '秋水书体';
+    src: url('../Assets/字体/秋水书体.woff2');
+}
+
+@font-face {
+    font-family: '汉仪中宋';
+    src: url('../Assets/字体/汉仪中宋S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪大宋';
+    src: url('../Assets/字体/汉仪大宋简.ttf');
+}
+
+@font-face {
+    font-family: '汉仪书宋二';
+    src: url('../Assets/字体/汉仪书宋二S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪细等线';
+    src: url('../Assets/字体/汉仪细等线S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪中等线';
+    src: url('../Assets/字体/汉仪中等线S.ttf');
 }
 
 @font-face {
@@ -84,4 +116,9 @@
     src: url('../Assets/字体/Baskerville/Baskerville-BoldItalic-2.ttf');
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mithril';
+    src: url('../Assets/字体/汉仪-Mithril.ttf');
 }

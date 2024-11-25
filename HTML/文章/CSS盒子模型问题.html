@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html lang="zh-cn">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0 initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>CSS盒子模型问题</title>
+        <!--?网页图标-->
+        <link rel="icon" href="../../Assets/图标/a318-ico.png">
+        <!--?CSS-->
+        <link rel="stylesheet" href="../../Style/文章主体.css">
+        <link rel="stylesheet" href="../../Style/顶部导航栏.css">
+        <link rel="stylesheet" href="../../Style/卡片.css">
+        <link rel="stylesheet" href="../../Style/侧边栏.css">
+        <link rel="stylesheet" href="../../Style/样式初始化.css">
+        <link rel="stylesheet" href="../../Style/头部.css">
+        <!--?JS-->
+        <script type='text/javascript' src="../../Script/顶部导航栏.js"></script>
+        <script type='text/javascript' src="../../Script/文章字数统计.js"></script>
+    </head>
+<body>
+        <!--顶部进度条-->
+        <!-- <div id="顶部进度条"></div> -->
+        <!--?顶部导航栏-->
+        <div class="顶部导航栏" onselectstart="return false">
+            <a class="nav-title" href="../../index.html">あかれ~</a>
+            <div class="nav-item">
+                <div class="菜单">
+                    <a href="../../index.html">
+                        <span>
+                            <img src="../../Assets/图标/png/home-2.png">首页
+                        </span>
+                    </a>
+                </div>
+                <div class="菜单">
+                    <a href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/Calendar-1.png">归档
+                        </span>
+                    </a>
+                    <div class="二级菜单">
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/code.png">极客
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/page-1.png">文章
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/movie.png">影评
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/chat-2.png">随想
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/pen-draw.png">笔记
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="菜单">
+                    <a href="#">
+                        <span>
+                            <img src="../../Assets/图标/png/cart.png">清单
+                        </span>
+                    </a>
+                    <div class="二级菜单">
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/book.png">书单
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/a-youtube1.png">番组
+                            </span>
+                        </a>
+                        <a class="栏目" href="#">
+                            <span>
+                                <img src="../../Assets/图标/png/note.png">歌单
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-end 主题样式">
+                <img src="../../Assets/图标/png/sun.png">
+            </div>
+        </div>
+        
+        <!--?文章头部-->
+        <div class="文章头部">
+            <div class="头图">
+                <img src="../../Assets/缩略图/A_03378.jpg">
+            </div>
+            <div class="文章信息">
+                <h1>CSS盒子模型问题</h1>
+                <p>
+                    <span class="作者">DYL</span>
+                    <span class="创建时间">2024-10-28</span>
+                    <span class="最后修改时间">2024-11-25</span>
+                    <span class="字数">字数</span>
+                </p>
+            </div>
+        </div>
+        
+        <!--?文章主体-->
+        <div class="文章主体">
+            <h1>CSS盒子模型问题</h1>
+<h2>顶部导航栏圆角设置不全</h2>
+<h4>问题：在设置顶部导航栏时，设置了圆角，但是发现圆角设置不全，只有左边和上边有圆角，右边和下边没有圆角。并且，出现了迷之position为32。我在padding中设置了1rem（1rem=16px），position设置为fixed，width为100%，height为2.5rem。</h4>
+<p><img alt="1730048716737" src="image/CSS盒子模型问题/1730048716737.png" />
+- 解决：
+    - 设置box-sizing:border-box后，发现导航栏的圆角显示出来，并且高度发生了改变。
+    <img alt="1730048834206" src="image/CSS盒子模型问题/1730048834206.png" />
+    - 所以之前内元素溢出的原因就是：
+        - 设置了 width:100%; 此时的 内容宽度 已经等于外元素的宽度，即 100rem(假设)。
+        - 因为设置了 padding: 1rem;，所以此时内元素的实际宽度为 100rem + 1rem + 1rem = 102rem，比外元素 100rem 的宽度超出了 2rem，所以就溢出了。
+    - box-sizing
+        - box-sizing 是用来定义如何计算元素的宽度和高度，属性值如下：
+        - box-sizing: content-box; 这是默认值，标准盒子模型。width 与 height 只包括内容的宽和高， 不包括边框（border），内边距（padding），外边距（margin）。
+        - box-sizing: border-box; width 和 height 属性包括内容，内边距和边框，但不包括外边距。
+        - 所以用 box-sizing: border-box; 就可以解决内元素宽度为100%时超出外元素的问题了。</p>
+<h4>参考资料</h4>
+<ul>
+<li><a href="https://blog.csdn.net/sinat_35538827/article/details/109062694">内元素宽度设为100%为什么会超出外元素_width100%会突出去-CSDN博客</a></li>
+</ul>
+        </div>
+        </body>
+        
+</html>

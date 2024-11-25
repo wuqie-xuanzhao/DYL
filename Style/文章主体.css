@@ -1,6 +1,6 @@
 .文章主体 {
     /* ?字体 */
-    font-family: Baskerville, 华文中宋, system-ui, -apple-system;
+    font-family: Baskerville, 方正新书宋简体, system-ui, -apple-system;
     /* ?格式 */
     display: flex;
     flex-direction: column;
@@ -12,34 +12,34 @@
 }
 
 .文章主体 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.文章主体 h2,
+.文章主体 h3,
+.文章主体 h4,
+.文章主体 h5,
+.文章主体 h6 {
     cursor: default !important;
 }
 
 .文章主体 h1 {
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     padding-top: 0.96rem;
     padding-bottom: 1.44rem;
 }
 
 .文章主体 h2 {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     padding-top: 0.88rem;
     padding-bottom: 1.32rem;
 }
 
 .文章主体 h3 {
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     padding-top: 0.8rem;
     padding-bottom: 1.2rem;
 }
 
 .文章主体 h4 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding-top: 0.72rem;
     padding-bottom: 1.08rem;
 }
@@ -52,6 +52,10 @@ h6 {
     text-align: justify;/* 两端对齐 */
     text-justify: newspaper;/* 悬挂缩进 */
     line-height: 1.5;/* 行间距 */
+}
+
+.文章主体 a::before {
+    content: '🔗';
 }
 
 .正文图像 {
@@ -82,6 +86,36 @@ h6 {
 @font-face {
     font-family: '华文中宋';
     src: url('../Assets/字体/华文中宋.ttf');
+}
+
+@font-face {
+    font-family: '秋水书体';
+    src: url('../Assets/字体/秋水书体.woff2');
+}
+
+@font-face {
+    font-family: '汉仪中宋';
+    src: url('../Assets/字体/汉仪中宋S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪大宋';
+    src: url('../Assets/字体/汉仪大宋简.ttf');
+}
+
+@font-face {
+    font-family: '汉仪书宋二';
+    src: url('../Assets/字体/汉仪书宋二S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪细等线';
+    src: url('../Assets/字体/汉仪细等线S.ttf');
+}
+
+@font-face {
+    font-family: '汉仪中等线';
+    src: url('../Assets/字体/汉仪中等线S.ttf');
 }
 
 @font-face {
@@ -127,4 +161,10 @@ h6 {
     src: url('../Assets/字体/Baskerville/Baskerville-BoldItalic-2.ttf');
     font-weight: bold;
     font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Mithril';
+    src: url('../Assets/字体/汉仪-Mithril.ttf');
 }

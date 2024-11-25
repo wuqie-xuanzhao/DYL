@@ -9,31 +9,31 @@
     <!--?网页图标-->
     <link rel="icon" href="./Assets/图标/a318-ico.png">
     <!--?CSS-->
-    <link rel="stylesheet" href="./Style/学习.css">
     <!-- <link rel="stylesheet" href="../../Style/文章主体.css"> -->
     <link rel="stylesheet" href="./Style/顶部导航栏.css">
     <!-- <link rel="stylesheet" href="../../Style/卡片.css"> -->
-    <link rel="stylesheet" href="./Style/侧边栏.css">
+    <!-- <link rel="stylesheet" href="./Style/侧边栏.css"> -->
     <link rel="stylesheet" href="./Style/样式初始化.css">
-    <link rel="stylesheet" href="./Style/头部.css">
+    <link rel="stylesheet" href="./Style/首页.css">
+    <!--?JS-->
+    <script type='text/javascript' src="../../Script/顶部导航栏.js"></script>
 </head>
 
 <body>
     <!--?网页头部-->
     <div class="网页头部" onselectstart="return false"> <!--?禁止选中文本-->
         <div class="中心问候">
-            <h1 class="中心问候-flex-item">HI, AKAREI!</h1>
+            <h1 class="中心问候-flex-item">H I ,  A K A R E I !</h1>
             <div class="中心问候-flex-svg">
                 <span class="中心问候-标语">"You got to put the past behind you before you can move on."</span>
-                <a href="https://github.com/wuqie-xuanzhao" title="Github"><img src="./Assets/图标/svg/github.svg"
+                <a href="https://github.com/wuqie-xuanzhao" title="Github"><img src="./Assets/图标/png/github.png"
                         alt="Github"></a>
-                <a href="https://space.bilibili.com/234439644" title="Bilibili"><img src="./Assets/图标/svg/bilibili.svg"
+                <a href="https://space.bilibili.com/234439644" title="Bilibili"><img src="./Assets/图标/png/bilibili1.png"
                         alt="Bilibili"></a>
-                <a href="https://x.com/yuanliyinling" title="Twitter"><img src="./Assets/图标/svg/twitter.svg"
+                <a href="https://x.com/yuanliyinling" title="Twitter"><img src="./Assets/图标/png/twitter.png"
                         alt="Twitter"></a>
-                <a href="./HTML/404.html" title="Telegram"><img src="./Assets/图标/svg/telegram.svg" alt="Telegram"></a>
-                <!--todo待添加channel-->
-                <a href="https://www.zhihu.com/people/yuan-li-yin-ling" title="Zhihu"><img src="./Assets/图标/svg/知乎.svg"
+                <a href="./HTML/404.html" title="Telegram"><img src="./Assets/图标/png/telegram_solid.png" alt="Telegram"></a>
+                <a href="https://www.zhihu.com/people/yuan-li-yin-ling" title="Zhihu"><img src="./Assets/图标/png/zhihu.png"
                         alt="Zhihu"></a>
             </div>
         </div>
@@ -118,16 +118,114 @@
 
     <!--?网页主体-->
     <main class="文章主体">
-        <div class="title">
-            <h1>欢迎来到赤霊的博客!</h1>
-        </div>
-        <h3>看看有些啥~</h3>
+        <h1>欢迎来到赤霊的博客!</h1>
+        <h2>看看有些啥~</h2>
         <div class="文章列表">
-            <a class="blog" href="./HTML/文章/GameViewer实现远程电脑.html">GameViewer实现远程电脑</a>
-            <a class="blog" href="./HTML/文章/Git同步问题.html">Git同步问题</a>
-            <a class="blog" href="https://yuanliyinling.notion.site/ACG-3fdd235f37cd4a198fab1870d8019995?pvs=73">ACG</a>
-            <a class="blog" href="./HTML/文章/本网站的构建思路.html">本网站的构建思路</a>
-            <a class="blog" href="./HTML/文章/汉字的起源.html">汉字的起源</a>
+            <div class="blog">
+                <div class="卡片信息">
+                    <div class="发布时间">
+                        <img class="icon" src="./Assets/图标/png/time.png">
+                        <span>发布于2024-11-24</span>
+                    </div>
+                    <a class="卡片标题" href="./HTML/文章/GameViewer实现远程电脑.html">GameViewer实现远程电脑</a>
+                    <div class="其他信息">
+                        <div class="标签">
+                            <img class="icon" src="./Assets/图标/png/tag.png">
+                            <span>标签</span>
+                        </div>
+                    </div>
+                    <div class="文章简介">
+                        GameViewer是由网易开发的一款全平台（有望鸿蒙Next）远程控制软件，特性：免费（可能暂时）、P2P、延迟低、界面美观、操作简易。
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./Assets\缩略图\background.png">
+                </div>
+            </div>
+            <div class="blog">
+                <div class="卡片信息">
+                    <div class="发布时间">
+                        <img class="icon" src="./Assets/图标/png/time.png">
+                        <span>发布于2024-11-24</span>
+                    </div>
+                    <a class="卡片标题" href="./HTML/文章/Git同步问题.html">Git同步问题</a>
+                    <div class="其他信息">
+                        <div class="标签">
+                            <img class="icon" src="./Assets/图标/png/tag.png">
+                            <span>标签</span>
+                        </div>
+                    </div>
+                    <div class="文章简介">
+                        问题：用VScode同步Git仓库，十次有九次出现网络错误。解决：尝试使用Git Bash命令行： git status 和 git push origin [分支名] --force；
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./Assets\缩略图\background.png">
+                </div>
+            </div>
+            <div class="blog">
+                <div class="卡片信息">
+                    <div class="发布时间">
+                        <img class="icon" src="./Assets/图标/png/time.png">
+                        <span>发布于2024-11-24</span>
+                    </div>
+                    <a class="卡片标题" href="https://yuanliyinling.notion.site/ACG-3fdd235f37cd4a198fab1870d8019995?pvs=73">ACG</a>
+                    <div class="其他信息">
+                        <div class="标签">
+                            <img class="icon" src="./Assets/图标/png/tag.png">
+                            <span>标签</span>
+                        </div>
+                    </div>
+                    <div class="文章简介">
+                        ACG
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./Assets\缩略图\background.png">
+                </div>
+            </div>
+            <div class="blog">
+                <div class="卡片信息">
+                    <div class="发布时间">
+                        <img class="icon" src="./Assets/图标/png/time.png">
+                        <span>发布于2024-11-24</span>
+                    </div>
+                    <a class="卡片标题" href="./HTML/文章/本网站的构建思路.html">本网站的构建思路</a>
+                    <div class="其他信息">
+                        <div class="标签">
+                            <img class="icon" src="./Assets/图标/png/tag.png">
+                            <span>标签</span>
+                        </div>
+                    </div>
+                    <div class="文章简介">
+                        关于本网站 提供导航、爱好、文章等内容，托管于github pages。需要发布文章或者分享资源（爱好）的，可以通过github的issue功能提交。
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./Assets\缩略图\background.png">
+                </div>
+            </div>
+            <div class="blog">
+                <div class="卡片信息">
+                    <div class="发布时间">
+                        <img class="icon" src="./Assets/图标/png/time.png">
+                        <span>发布于2024-11-24</span>
+                    </div>
+                    <a class="卡片标题" href="./HTML/文章/汉字的起源.html">汉字的起源</a>
+                    <div class="其他信息">
+                        <div class="标签">
+                            <img class="icon" src="./Assets/图标/png/tag.png">
+                            <span>标签</span>
+                        </div>
+                    </div>
+                    <div class="文章简介">
+                        长期以来，人们把“语言”一词，界定为“人类所特有的用来表达意思、交流思想的工具”，或是"人类特有的一种符号系统”，认为语言是人类区别于其他动物的根本特征之一。可是，经过科学家的研究，现在已经发现许多动物，例如海豚、鲸、黑猩猩、金丝雀、蜜蜂等，也有广义的语言，包括人类听得见的或是听不见的，有的还相当复杂。于是，语言似乎不能视作人类的专利了，尽管在许多方面，动物的语言与人类的语言无法相提并论。
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="./Assets\缩略图\background.png">
+                </div>
+            </div>
         </div>
     </main>
     <!--?页脚-->
